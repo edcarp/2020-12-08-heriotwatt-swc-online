@@ -15,7 +15,7 @@ startdate: 2020-12-08      # machine-readable start date for the workshop in YYY
 enddate: 2020-12-16        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Evgenij Belikov", "Oliver Brown"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Matthew Hamilton", TBA]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["TBA"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+email: ["e.belikov@epcc.ed.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.carpentries.org/2020-12-08-heriotwatt-swc-online # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -141,8 +141,8 @@ address.
 </p>
 {% elsif online == "true_private" %}
 <p id="where">
-  <strong>Where:</strong> This training will take place online.
-  The instructors will provide you with the information you will need to connect to this meeting.
+  <strong>Where:</strong> This training will take place online. Please check your emails for information on how to connect.
+  Please get in touch with the organisers if there are any issues.
 </p>
 {% endif %}
 
@@ -296,7 +296,7 @@ available at https://codimd.carpentries.org
 <h2 id="collaborative_notes">Collaborative Notes</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+  We will use this <b><a href="{{ page.collaborative_notes }}">collaborative document</a></b> for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 <hr/>
 {% endif %}
@@ -335,9 +335,11 @@ of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
 {% endcomment %}
 
-<h2 id="schedule">Schedule (TBA)</h2>
+<h2 id="schedule">Schedule</h2>
 
 {% include custom-schedule.html %}
+
+NB: we will take hourly breaks at suitable moments.
 
 {% comment %}
 {% if site.carpentry == "swc" %}
